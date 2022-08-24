@@ -1,0 +1,85 @@
+/* Try to remmeber how to center align items */
+
+h2 {
+    font-size: largest;
+    text-align: center;
+}
+
+
+.game-area {
+    background-color: rgba(74, 25, 207, 0.8);
+    border: 2px double black;
+    text-align: center;
+}
+
+.play-btn {
+    font-size: large;
+
+    width: 10%;
+    text-decoration: none;
+    background: linear-gradient(75deg, rgb(138, 138, 255) 0%, rgb(89, 89, 255) 100%);
+    border-radius: 5px;
+}
+
+.play-btn:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+body {
+    color: rgb(14, 14, 4);
+}
+
+.choices-area {
+    display: flex;
+    margin: auto;
+    width: 85%;
+    border: 2px double black;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.choices-area:hover {
+    border-color: #12a568;
+    color: #9517bb;
+    /* transform: scale(1.2); */
+    transform: transform 100ms;
+}
+
+.choice-box {
+    text-align: center;
+    color: #12a568;
+    padding: 2rem 2.5rem;
+}
+
+.choice-box-text {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.right-answer {
+    background: linear-gradient(32deg, #03b903 0%, #014b01 100%);
+}
+
+.wrong-answer {
+    background: linear-gradient(32deg, #b40606 0%, #630202 100%);
+}
+
+.progress {
+width: 20rem;
+height: 3rem;
+border: 0.2rem double green;
+margin-top: 2rem;
+border-radius: 50px;
+overflow: hidden;
+}
+
+.progress-full {
+height: 100%;
+background: green;
+width: 0%;
+
+}
+
+
