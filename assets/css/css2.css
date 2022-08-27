@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* .panel{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+} */
+
+.game-area {
+    /* margin: 10px;
+    padding: 5px;
+    width: 85%;
+    height: 10vh;
+    background-color: #c7dddf;
+    font-size: x-large; */
+    text-align: center;
+    border: 3px double black;
+}
+
+.game-container {
+    border: 3px double black;
+
+}
+
+#results-display {
+    /* display: flex; */
+    justify-content: space-between;
+    width: 95%;
+    border: 3px double black;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+#display {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.score {
+    text-align: center;
+    font-size: 32px;
+}
+
+.high-score {
+    margin: right;
+}
+
+
+
+/* .progress {
+    width: 20rem;
+    height: 5rem;
+    border: 2px double green;
+    margin-top: 2rem;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress-full {
+    height: 100%;
+    background: green;
+    width: 0%;
+} */
+
+
+.choices-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 5px;
+    width: 95%;
+    height: 20vh;
+    background-color: #9eb1b3;
+    border: 3px double black;
+}
+
+.options {
+    /* padding: 10px; */
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    background-color: lightskyblue;
+    border-radius: 25%;
+    border: 3px double black;
+    text-align: center;
+
+}
+
+.options:hover {
+    background-color: rgb(133, 133, 37);
+}
+
+.reset {
+    /* padding: 10px; */
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    /* background-color: lightskyblue; */
+    border-radius: 25%;
+    border: 3px double black;
+    text-align: center;
+
+}
+
+.reset:hover {
+    background-color: blue;
+}
+
+.skip {
+    /* padding: 10px; */
+    width: 15vw;
+    height: 10vh;
+    font-size: larger;
+    /* background-color: lightskyblue; */
+    border-radius: 25%;
+    border: 3px double black;
+    text-align: center;
+
+}
+
+.skip:hover {
+    background-color: red;
+}
+
+.reset-skip-area {
+    width: 95%;
+    height: 10vh;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #c7dddf;
+    border: 3px double black;
+}
+
+
+
+.Right {
+    background-color: green;
+}
+
+.Wrong {
+    background-color: red;
+}
