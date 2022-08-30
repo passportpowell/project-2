@@ -9,8 +9,6 @@ const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("options"));
 console.log(choices)
 
-let currentQ = {}
-let acceptedA = false // Stops players from starting the game before everything loads
 let currentScore = 0
 let questionNo = 0
 let noOfQuestions = []
@@ -110,6 +108,10 @@ startGame = () => {
     nextQuestion()
 }
 
+let acceptedA = false // Stops players from starting the game before everything loads
+let currentQ = {}
+
+
 nextQuestion = () => {
     questionNo++
     const questionsIndex = Math.floor(Math.random() * noOfQuestions.length)
@@ -125,8 +127,7 @@ nextQuestion = () => {
     acceptedA = true    // This allows players to answer the questions
 
     if (noOfQuestions.length === 0 || questionNo >= maxQuestions) {
-        alert("Game Over!" +
-            " Thanks for playing :-)")
+        alert("Game Over! you scored ${total} out of 50 Thanks for playing :-)")
     }
 }
 
@@ -170,16 +171,6 @@ choices.forEach(choice => {
     })
 })
 
-// function addScore() {
-// let previousScore = parseInt(document.getElementById("total").innerText)
-// document.getElementById("total").innerText = ++previousScore
-// }
-
-
-// addScore = num => {
-//     total += num;
-//     scoreTotal.innerText = total;
-// }
 
 startGame()
 

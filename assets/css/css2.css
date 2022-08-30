@@ -1,27 +1,17 @@
 body {
     padding: 0;
     margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 85%;
+    height: 80%;
 }
 
-/* .panel{
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-} */
-
 .game-area {
-    /* margin: 10px;
-    padding: 5px;
-    width: 85%;
-    height: 10vh;
-    background-color: #c7dddf;
-    font-size: x-large; */
     text-align: center;
-    border: 3px double black;
+    height: 16px;
+    margin: auto 0;
+    padding-left: 20%;
+    padding-top: 10%;
+
 }
 
 .game-container {
@@ -30,58 +20,42 @@ body {
 }
 
 #results-display {
-    /* display: flex; */
     justify-content: space-between;
     width: 95%;
-    border: 3px double black;
-    margin: 10px;
+    margin: 1%;
     padding: 5px;
+    border: 3px double black;
 
 }
 
 #display {
     text-align: center;
     font-size: 75px;
+    margin: auto
 }
 
 #score {
     text-align: center;
     font-size: 32px;
+    height: 50%;
+    padding: 1px;
 }
-
-
-
-/* .progress {
-    width: 20rem;
-    height: 5rem;
-    border: 2px double green;
-    margin-top: 2rem;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-.progress-full {
-    height: 100%;
-    background: green;
-    width: 0%;
-} */
 
 
 .choices-area {
     display: flex;
     justify-content: space-around;
-    margin: 10px;
+    margin: 1%;
     padding: 5px;
     width: 95%;
     height: 20vh;
     background-color: #9eb1b3;
     border: 3px double black;
+
 }
 
 .options {
-    /* padding: 10px; */
     width: 15vw;
-    height: 10vh;
     font-size: larger;
     background-color: lightskyblue;
     border-radius: 25%;
@@ -95,11 +69,9 @@ body {
 }
 
 .reset {
-    /* padding: 10px; */
     width: 15vw;
     height: 10vh;
     font-size: larger;
-    /* background-color: lightskyblue; */
     border-radius: 25%;
     border: 3px double black;
     text-align: center;
@@ -111,11 +83,9 @@ body {
 }
 
 .skip {
-    /* padding: 10px; */
     width: 15vw;
     height: 10vh;
     font-size: larger;
-    /* background-color: lightskyblue; */
     border-radius: 25%;
     border: 3px double black;
     text-align: center;
@@ -129,7 +99,7 @@ body {
 .reset-skip-area {
     width: 95%;
     height: 10vh;
-    margin: 10px;
+    margin: 1%;
     padding: 5px;
     display: flex;
     justify-content: space-around;
@@ -146,3 +116,5 @@ body {
 .Wrong {
     background-color: red;
 }
+
+@media screen 768px {}
