@@ -131,13 +131,11 @@ nextQuestion = () => {
 }
 
 
-// const scoreTotal = document.getElementById("total")
+const total = document.getElementById("total")
 const correctIncrement = 5
 function addScore() {
-    let previousScore = parseInt(document.getElementById("total").innerText)
-    document.getElementById("total").innerText = correctIncrement
-    previousScore = correctIncrement
-    
+    let previousScore = parseInt(total.innerText)
+    total.innerText = previousScore + correctIncrement
 }
 
 
