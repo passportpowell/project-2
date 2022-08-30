@@ -27,3 +27,7 @@ all answers are showing as incoorect. fixed by checking my syntax in my ternary 
 trying to apply a class to the right and wrong answer respectivly wasn't working. fixed by changin "options" class into an options id.
 
 trying to get score to incrememnt if answer was correct wasn't working and instead showed error of "[objectHTMLHeadingelement]10" where i wanted it to incrememnt the score by 5. the fix was  o assign previousScore first, add 5 to that score and assign the total.innerText to that new score
+
+total questions are 10 but game over message appears after 9 questions. to fix i had to change the order so it ran first in the nextQuestion function
+
+gameover message wont show amount of questions correct. Fixed by andding ".innerText" to total to make it total.innerText

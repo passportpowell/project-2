@@ -21,6 +21,7 @@ let questions = [
         choice3: "Northfield",
         choice4: "Elizabeth",
         answer: 2,
+        img: "",
     },
 
     {
@@ -30,6 +31,7 @@ let questions = [
         choice3: "Southern Ireland",
         choice4: "Elizabeth",
         answer: 2,
+        img: "",
     },
     {
         question: "What is the capital city of Scotland?",
@@ -38,6 +40,7 @@ let questions = [
         choice3: "Mayfield",
         choice4: "Boston",
         answer: 1,
+        img: "",
     },
     {
         question: "What is the capital city of Wales?",
@@ -46,6 +49,7 @@ let questions = [
         choice3: "Cardiff",
         choice4: "Elizabeth",
         answer: 3,
+        img: "",
     },
     {
         question: "What is the capital city of Spain?",
@@ -54,6 +58,7 @@ let questions = [
         choice3: "Northfield",
         choice4: "Madrid",
         answer: 4,
+        img: "",
     },
     {
         question: "What is the capital city of Italy?",
@@ -62,6 +67,7 @@ let questions = [
         choice3: "Northfield",
         choice4: "Elizabeth",
         answer: 1,
+        img: "",
     },
     {
         question: "What is the capital city of Germany?",
@@ -70,6 +76,7 @@ let questions = [
         choice3: "Northfield",
         choice4: "Elizabeth",
         answer: 1,
+        img: "",
     },
     {
         question: "What is the capital city of France?",
@@ -78,6 +85,7 @@ let questions = [
         choice3: "Paris",
         choice4: "Elizabeth",
         answer: 3,
+        img: "",
     },
     {
         question: "What is the capital city of Greece?",
@@ -86,6 +94,7 @@ let questions = [
         choice3: "Northfield",
         choice4: "Elizabeth",
         answer: 2,
+        img: "",
     },
     {
         question: "What is the capital city of North Macedonia?",
@@ -94,11 +103,10 @@ let questions = [
         choice3: "Skopje",
         choice4: "Elizabeth",
         answer: 3,
+        img: "",
     },
 ]
 
-// const correctIncrement = 5
-const maxQuestions = 10
 
 startGame = () => {
     questionNo = 0
@@ -108,16 +116,24 @@ startGame = () => {
     nextQuestion()
 }
 
+const maxQuestions = 10
 let acceptedA = false // Stops players from starting the game before everything loads
 let currentQ = {}
 
 
 nextQuestion = () => {
+  
+      if (noOfQuestions.length === 0 || questionNo > maxQuestions) {
+        alert(`Game Over! you scored ${total.innerText} out of 50! Thanks for playing :-)`)
+    }
+    
     questionNo++
     const questionsIndex = Math.floor(Math.random() * noOfQuestions.length)
     currentQ = noOfQuestions[questionsIndex]
     question.innerText = currentQ.question
 
+  
+  
     choices.forEach(choice => {
         const number = choice.dataset["number"]
         choice.innerText = currentQ["choice" + number]
@@ -126,9 +142,6 @@ nextQuestion = () => {
     noOfQuestions.splice(questionsIndex, 1) //  This should remove the question from the game so it doesnt repeat
     acceptedA = true    // This allows players to answer the questions
 
-    if (noOfQuestions.length === 0 || questionNo >= maxQuestions) {
-        alert("Game Over! you scored ${total} out of 50 Thanks for playing :-)")
-    }
 }
 
 
