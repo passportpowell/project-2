@@ -99,7 +99,7 @@ let questions = [
     },
 ]
 
-const correctIncrement = 10
+// const correctIncrement = 5
 const maxQuestions = 10
 
 startGame = () => {
@@ -130,6 +130,17 @@ nextQuestion = () => {
     }
 }
 
+
+// const scoreTotal = document.getElementById("total")
+const correctIncrement = 5
+function addScore() {
+    let previousScore = parseInt(document.getElementById("total").innerText)
+    document.getElementById("total").innerText = correctIncrement
+    previousScore = correctIncrement
+    
+}
+
+
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         console.log(e.target)// This is to check that the button clicks matches what's excpected via console
@@ -138,16 +149,21 @@ choices.forEach(choice => {
         const chosenButton = e.target
         const chosenChoice = chosenButton.dataset["number"] // to fix - something is going wrong here
 
-        //try some ternary
+        //trying some ternary
         const applyClass = chosenChoice == currentQ.answer ? "Right" : "Wrong"
+
         console.log(applyClass) //Checking if it worked
+
+        if (applyClass == "Right") {
+            addScore()
+        }
+
 
         chosenButton.classList.add(applyClass)
 
 
-
         setTimeout(() => {
-            // chosenButton.classList.remove(applyClass)
+            chosenButton.classList.remove(applyClass)
             nextQuestion()
         }, 1000)
 
@@ -155,6 +171,17 @@ choices.forEach(choice => {
 
     })
 })
+
+// function addScore() {
+// let previousScore = parseInt(document.getElementById("total").innerText)
+// document.getElementById("total").innerText = ++previousScore
+// }
+
+
+// addScore = num => {
+//     total += num;
+//     scoreTotal.innerText = total;
+// }
 
 startGame()
 

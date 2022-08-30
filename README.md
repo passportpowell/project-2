@@ -25,3 +25,5 @@ questions moved on to fast before showing whether or not the chosen answer was c
 all answers are showing as incoorect. fixed by checking my syntax in my ternary attempt. i had it compare to "acceptedA" instead of answer in the questions array
 
 trying to apply a class to the right and wrong answer respectivly wasn't working. fixed by changin "options" class into an options id.
+
+trying to get score to incrememnt if answer was correct wasn't working and instead showed error of "[objectHTMLHeadingelement]10" where i wanted it to incrememnt the score by 10.

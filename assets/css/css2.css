@@ -41,16 +41,12 @@ body {
 
 #display {
     text-align: center;
-    font-size: 2rem;
+    font-size: 75px;
 }
 
-.score {
+#score {
     text-align: center;
     font-size: 32px;
-}
-
-.high-score {
-    margin: right;
 }
 
 
