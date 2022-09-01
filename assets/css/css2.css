@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+
 body {
     padding: 0;
     margin-top: -31px;
     width: 85%;
     height: 80%;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+
 }
 
 .game-area {
@@ -58,7 +68,7 @@ footer {
     margin: 0 auto;
     padding: 5px;
     width: 95%;
-    height: 20vh;
+    height: 75px;
     background-color: #9eb1b3;
     border: 3px double black;
 
@@ -81,7 +91,7 @@ a {
     border-radius: 25%;
     border: 3px double black;
     color: rgb(79, 15, 15);
-margin: 0 auto;
+    margin: 0 auto;
     background-color: rgb(74, 166, 224);
 
 }
@@ -97,23 +107,10 @@ a {
     padding-top: 2%;
 }
 
-.skip {
-    width: 15vw;
-    height: 10vh;
-    font-size: larger;
-    border-radius: 25%;
-    border: 3px double black;
-    text-align: center;
-
-}
-
-.skip:hover {
-    background-color: red;
-}
 
 .reset-skip-area {
     width: 95%;
-    height: 10vh;
+    height: 75px;
     margin: 0 auto;
     padding: 5px;
     display: flex;
@@ -166,6 +163,17 @@ a {
         padding-left: 16%;
     }
 
+    .reset-skip-area {
+        width: 95%;
+        height: 75px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        background-color: #c7dddf;
+        border: 3px double black;
+        color: aqua;
+    }
+
 }
 
 @media screen and (max-width: 806px) {
@@ -173,7 +181,6 @@ a {
         padding-top: 5%;
         width: 50%;
         text-align: center;
-        /* margin: 0 auto; */
         position: static;
         margin-top: 10px;
 
@@ -190,7 +197,7 @@ a {
         height: 594px;
     }
 
-footer {
-    padding-top: 5%;
-}
+    footer {
+        padding-top: 5%;
+    }
 }
