@@ -7,6 +7,7 @@ body {
     width: 85%;
     height: 80%;
     font-family: 'Roboto Slab', serif;
+    background: url(../assets/images/europe.webp) ;
 }
 
 h1, h2, h3, h4, p {
@@ -21,12 +22,17 @@ h1, h2, h3, h4, p {
     margin: 0 auto;
     padding-left: 11%;
     padding-top: 5%;
+    background-image: url(../assets/images/europe.webp) no-repeat center center;
+    background: url('../assets/images/europe.webp') ;
 }
 
 .game-container {
     border: 3px double black;
     width: 75%;
     margin: 0 auto;
+    background-image: url('../assets/images/europe.webp') no-repeat center center;
+    background:  url(../assets/images/europe.webp) ;
+
 }
 
 #results-display {

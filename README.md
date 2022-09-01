@@ -1,17 +1,79 @@
-# project-2
-
-1 player Multiple choice Game
-
-
-## options
-
-- geography capital cities*
-- option to remove an answer up 1 times per quesion (max of 3 uses overall)
-- scores 
-- progress bar 
+# Passport-Powell
+Portfolio 1 Assessment
 
 
-## bugs
+Travel community site for meeting fellow travelers. Site is targeted mostly towards travelers coming into the UK while still being open to residents.
+
+![Responsive Image](https://github.com/passportpowell/Passport-Powell/blob/main/readme-images/amiresponsive_old.jpg)## User Stories
+
+- Main page
+As a visiting user: I would like to see what the Website is about.
+
+- Sign up Page
+As a visiting user: I would like to signup for the newsletter.
+
+- Weekly Schedule Page
+As a visiting use: I would like to view the weekly schedule for meet ups. 
+
+- Past events gallery page
+As a visiting user: I would like to view the past event gallery. 
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Main Page
+## Future Features## Future Features
+
+- Multiplayer
+- Save top 10 Scores
+- Category Selection
+## Typography
+
+- Font size used was Roboto-Slab
+- Colors used 
+## Technologies Used
+
+### Technologies used were as follows:
+
+
+HTML5 - Used for creating layout.
+
+CSS -  Used for styling HTML.
+
+github - Used for hosting repository for easy sharing.
+
+gitpod -  Used for writing the HTML and CSS and README.
+
+HOVER:CSS - Used for hover styling.
+
+GOOGLE FONTS - for use of roboto-slab
+
+FONT awesome - used for icons
+## Running Tests
+
+### CSS Validation
+
+
+
+### HTML Validation
+
+
+
+### JavaScript Validation
+
+
+
+### lighthouse validator
+
+
+
+
+## Bugs Along The Way
+
 javascript for choices wasn't allowing me to check if answer was correct. Had to change "choicea" to "choice1" for it to work.
 
 Math function wasn't working correctly. corrected by using .length on 'let noOfQuestions []' as each time a question if presented the total number would decrease. helps in stopping the same question appearing.
@@ -33,3 +95,20 @@ total questions are 10 but game over message appears after 9 questions. to fix i
 gameover message wont show amount of questions correct. Fixed by andding ".innerText" to total to make it total.innerText
 
 Reset button was only working if text was clicked rather than the area surrounding the text. fix was to change from being a "button" to just being and anchor link "a"
+## Deployment
+
+Deployment was achieved via GitHub and gitpod pages using the following steps
+
+## Github
+ - In the GitHub repository go to the Settings tab,
+
+ - using the source section drop-down menu, select the Master/ or Main Branch,
+
+ - Once completed a link will be provided that may take a few minutes to go live,
+
+ - live link https://passportpowell.github.io/Passport-Powell/ .
+
+## gitpod
+ in the terminal type python3 -m http.server
+ a pop up appears which upon clicking "open in browserW will show a new tab with the site created.
+## Credits
