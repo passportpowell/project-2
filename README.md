@@ -31,3 +31,5 @@ trying to get score to incrememnt if answer was correct wasn't working and inste
 total questions are 10 but game over message appears after 9 questions. to fix i had to change the order so it ran first in the nextQuestion function
 
 gameover message wont show amount of questions correct. Fixed by andding ".innerText" to total to make it total.innerText
+
+Reset button was only working if text was clicked rather than the area surrounding the text. fix was to change from being a "button" to just being and anchor link "a"
