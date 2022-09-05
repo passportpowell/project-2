@@ -95,6 +95,9 @@ total questions are 10 but game over message appears after 9 questions. to fix i
 gameover message wont show amount of questions correct. Fixed by andding ".innerText" to total to make it total.innerText
 
 Reset button was only working if text was clicked rather than the area surrounding the text. fix was to change from being a "button" to just being and anchor link "a"
+
+When Right or wrong button is clicked they turn the correct color. When the wrong color is clicked it won't show what the correct answer is.
+
 ## Deployment
 
 Deployment was achieved via GitHub and gitpod pages using the following steps

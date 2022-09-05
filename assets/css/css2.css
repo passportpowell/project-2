@@ -7,13 +7,12 @@ body {
     width: 85%;
     height: 80%;
     font-family: 'Roboto Slab', serif;
-    background: url(../assets/images/europe.webp) ;
+    background: url(../assets/images/europe.webp);
 }
 
 h1, h2, h3, h4, p {
     font-family: 'Roboto Slab', serif;
     font-weight: 600;
-
 }
 
 .game-area {
@@ -23,7 +22,7 @@ h1, h2, h3, h4, p {
     padding-left: 11%;
     padding-top: 5%;
     background-image: url(../assets/images/europe.webp) no-repeat center center;
-    background: url('../assets/images/europe.webp') ;
+    background: url('../assets/images/europe.webp');
 }
 
 .game-container {
@@ -31,8 +30,7 @@ h1, h2, h3, h4, p {
     width: 75%;
     margin: 0 auto;
     background-image: url('../assets/images/europe.webp') no-repeat center center;
-    background:  url(../assets/images/europe.webp) ;
-
+    background: url(../assets/images/europe.webp);
 }
 
 #results-display {
@@ -41,7 +39,6 @@ h1, h2, h3, h4, p {
     margin: 0 auto;
     padding: 5px;
     border: 3px double black;
-
 }
 
 footer {
@@ -58,7 +55,6 @@ footer {
 .score {
     text-align: center;
     font-size: 15px;
-
 }
 
 .player-name {
@@ -77,7 +73,6 @@ footer {
     height: 75px;
     background-color: #9eb1b3;
     border: 3px double black;
-
 }
 
 .options {
@@ -98,8 +93,7 @@ a {
     border: 3px double black;
     color: rgb(79, 15, 15);
     margin: 0 auto;
-    background-color: rgb(74, 166, 224);
-
+    background-color: rgb(194, 131, 15);
 }
 
 /* .options:hover */
@@ -183,19 +177,18 @@ a {
 }
 
 @media screen and (max-width: 806px) {
+
     .choices-area>button {
         padding-top: 5%;
         width: 50%;
         text-align: center;
         position: static;
         margin-top: 10px;
-
     }
 
     .choices-area {
         display: block;
         height: 42%;
-
     }
 
 
@@ -205,5 +198,26 @@ a {
 
     footer {
         padding-top: 5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    #results-display {
+        margin: 0 auto;
+        padding: 5px;
+        border: 3px double black;
+        height: min-content;
+    }
+
+    .game-container {
+        height: fit-content;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 10%;
+    }
+
+    .player-name {
+        display: none;
     }
 }
