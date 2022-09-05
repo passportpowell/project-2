@@ -2,42 +2,60 @@
 Portfolio 1 Assessment
 
 
-Travel community site for meeting fellow travelers. Site is targeted mostly towards travelers coming into the UK while still being open to residents.
+Quiz site for capital cities in the uk targetted for people that want to test their knowledge.
 
-![Responsive Image](https://github.com/passportpowell/Passport-Powell/blob/main/readme-images/amiresponsive_old.jpg)## User Stories
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/readme.jpg?raw=true) 
+
+## User Stories
 
 - Main page
-As a visiting user: I would like to see what the Website is about.
-
-- Sign up Page
-As a visiting user: I would like to signup for the newsletter.
-
-- Weekly Schedule Page
-As a visiting use: I would like to view the weekly schedule for meet ups. 
-
-- Past events gallery page
-As a visiting user: I would like to view the past event gallery. 
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+As a visiting user: I would like to see what the Website is about and to have quiz access to the quiz.
 
 
-## Main Page
-## Future Features## Future Features
+
+
+
+### Future Features
 
 - Multiplayer
 - Save top 10 Scores
 - Category Selection
+
+
+## Main Page
+
+## Features
+
+- Quiz in random order
+- Reset Quiz
+
 ## Typography
 
 - Font size used was Roboto-Slab
 - Colors used 
-## Technologies Used
 
-### Technologies used were as follows:
+#000000
+
+#9eb1b3
+
+#4aa6e0
+
+#4f0f0f
+
+#c2830f
+
+#0000ff
+
+#c7dddf
+
+#00ffff
+
+#008000
+
+#ff0000
+
+
+## Technologies Used
 
 
 HTML5 - Used for creating layout.
@@ -56,14 +74,25 @@ FONT awesome - used for icons
 ## Running Tests
 
 ### CSS Validation
-
-
+Validator used was https://jigsaw.w3.org/
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+       
 
 ### HTML Validation
+Validator used was  https://validator.w3.org/
 
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/html-validator.jpg)
 
 
 ### JavaScript Validation
+Validator used was https://jshint.com/
+
 
 
 
