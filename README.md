@@ -2,9 +2,11 @@
 Portfolio 1 Assessment
 
 
-Quiz site for capital cities in the uk targetted for people that want to test their knowledge.
+Quiz site for a simple capital cities in the uk targetted for people that want to test their knowledge.
 
-![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/readme.jpg?raw=true) 
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/readme.jpg?raw=true)
+
+
 
 ## User Stories
 
@@ -87,7 +89,7 @@ Validator used was https://jigsaw.w3.org/
 ### HTML Validation
 Validator used was  https://validator.w3.org/
 
-![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/html-validator.jpg)
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/html-validator.jpg?raw=true)
 
 
 ### JavaScript Validation
@@ -97,35 +99,33 @@ Validator used was https://jshint.com/
 
 
 ### lighthouse validator
-
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/lighthouse.jpg?raw=true)
 
 
 
 ## Bugs Along The Way
 
-javascript for choices wasn't allowing me to check if answer was correct. Had to change "choicea" to "choice1" for it to work.
+- JS code for "choices" wasn't allowing me to check if answer was correct. Fixed by cahnging "choicea" to "choice1".
 
-Math function wasn't working correctly. corrected by using .length on 'let noOfQuestions []' as each time a question if presented the total number would decrease. helps in stopping the same question appearing.
+- The actual questions inside [questions] array was not showing up and changing but instead showed as "undefined". fixed by changing "class=question" to "id=question" in html.
 
-Questions inside questions array was not showing up and chanchging but instead showed as "undefined". fixed by changing "class=question" to "id=question" in html.
+- After selecting the correct answer in the quiz nothing would happen and the next question would not load. Fixed by checking the js code and found accidently commented out code.
 
-After solecting correct answer nothing would happen and next question would not load. fixed by checking my comments to see i had commented out code instead of commenting next to it. fixed the error
+- Questions changed before showing whether or not the chosen answer was correct via colors (Green or Red). fixed by finiding out how to set a time limit before moving onto next question.
 
-questions moved on to fast before showing whether or not the chosen answer was correct via colors. fixed by finiding out how to set a time limit before moving onto next question
+- All answers are showing as incoorect. fixed by checking my code in my js code in the ternary attempt and had code compare to "acceptedA" instead of answer in the questions array.
 
-all answers are showing as incoorect. fixed by checking my syntax in my ternary attempt. i had it compare to "acceptedA" instead of answer in the questions array
+- Trying to apply a class to the right and wrong answer respectivly wasn't working. fixed by changin "options" class into an options id.
 
-trying to apply a class to the right and wrong answer respectivly wasn't working. fixed by changin "options" class into an options id.
+- Trying to get score to incrememnt if answer was correct wasn't working and instead showed error of "[objectHTMLHeadingelement]10" where i wanted it to incrememnt the score by 5. the fix was  o assign previousScore first, add 5 to that score and assign the total.innerText to that new score
 
-trying to get score to incrememnt if answer was correct wasn't working and instead showed error of "[objectHTMLHeadingelement]10" where i wanted it to incrememnt the score by 5. the fix was  o assign previousScore first, add 5 to that score and assign the total.innerText to that new score
+- Total questions are 10 but game over message appears after 9 questions. to fix i had to change the order so it ran first in the nextQuestion function
 
-total questions are 10 but game over message appears after 9 questions. to fix i had to change the order so it ran first in the nextQuestion function
+- Gameover message wont show amount of questions correct. Fixed by andding ".innerText" to total to make it total.innerText
 
-gameover message wont show amount of questions correct. Fixed by andding ".innerText" to total to make it total.innerText
+- Reset button was only working if text was clicked rather than the area surrounding the text. fix was to change from being a "button" to just being and anchor link "a"
 
-Reset button was only working if text was clicked rather than the area surrounding the text. fix was to change from being a "button" to just being and anchor link "a"
-
-When Right or wrong button is clicked they turn the correct color. When the wrong color is clicked it won't show what the correct answer is.
+- When Right or wrong button is clicked they turn the correct color. When the wrong color is clicked it won't show what the correct answer is.
 
 ## Deployment
 
