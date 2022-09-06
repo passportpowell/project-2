@@ -9,16 +9,11 @@ Quiz site for a simple capital cities in the uk targetted for people that want t
 
 
 ## User Stories
-
 - Main page
-As a visiting user: I would like to see what the Website is about and to have quiz access to the quiz.
-
-
-
+As a visiting user I would like to see what the website is about and to have access to the quiz.
 
 
 ### Future Features
-
 - Multiplayer
 - Save top 10 Scores
 - Category Selection
@@ -27,52 +22,51 @@ As a visiting user: I would like to see what the Website is about and to have qu
 ## Main Page
 
 ## Features
-
 - Quiz in random order
 - Reset Quiz
+- current Score update
+- Score out of 50 points
 
 ## Typography
-
 - Font size used was Roboto-Slab
 - Colors used 
 
-#000000
+- #000000
 
-#9eb1b3
+- #9eb1b3
 
-#4aa6e0
+- #4aa6e0
 
-#4f0f0f
+- #4f0f0f
 
-#c2830f
+- #c2830f
 
-#0000ff
+- #0000ff
 
-#c7dddf
+- #c7dddf
 
-#00ffff
+- #00ffff
 
-#008000
+- #008000
 
-#ff0000
+- #ff0000
 
 
 ## Technologies Used
-
-
 HTML5 - Used for creating layout.
 
 CSS -  Used for styling HTML.
 
 github - Used for hosting repository for easy sharing.
 
-gitpod -  Used for writing the HTML and CSS and README.
+gitpod -  Used for writing the HTML, CSS, JS and README.
 
 HOVER:CSS - Used for hover styling.
 
 GOOGLE FONTS - for use of roboto-slab
 
 FONT awesome - used for icons
+
 ## Running Tests
 
 ### CSS Validation
@@ -104,7 +98,6 @@ Validator used was https://jshint.com/
 
 
 ## Bugs Along The Way
-
 - JS code for "choices" wasn't allowing me to check if answer was correct. Fixed by cahnging "choicea" to "choice1".
 
 - The actual questions inside [questions] array was not showing up and changing but instead showed as "undefined". fixed by changing "class=question" to "id=question" in html.
@@ -128,7 +121,6 @@ Validator used was https://jshint.com/
 - When Right or wrong button is clicked they turn the correct color. When the wrong color is clicked it won't show what the correct answer is.
 
 ## Deployment
-
 Deployment was achieved via GitHub and gitpod pages using the following steps
 
 ## Github
@@ -138,9 +130,13 @@ Deployment was achieved via GitHub and gitpod pages using the following steps
 
  - Once completed a link will be provided that may take a few minutes to go live,
 
- - live link https://passportpowell.github.io/Passport-Powell/ .
+ <!-- - live link https://passportpowell.github.io/Passport-Powell/ . -->
 
 ## gitpod
  in the terminal type python3 -m http.server
  a pop up appears which upon clicking "open in browserW will show a new tab with the site created.
+
 ## Credits
+- Timeout js was sourced from "https://www.w3schools.com/jsref/met_win_setTimeout.asp" & "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"
+- Code for js was used from full stack developer course code.
+- Help was asked using the slack group as as game ended after 9 questions instead of 10. solution was found thanks to a member of the community.
