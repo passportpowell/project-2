@@ -24,8 +24,28 @@ As a visiting user I would like to see what the website is about and to have acc
 ## Features
 - Quiz in random order
 - Reset Quiz
-- current Score update
+- Current Score update
 - Score out of 50 points
+
+### Game type
+- Multiple choice quiz based on capital cities of countries in europe.
+
+- Player clicks their choice and is informed of whter or not they are correct through interactive buttons and colors.
+
+- Results after clicking an option are shown via colors, Green for correct and Red for incorrect.
+
+
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/right-answer.jpg?raw=true)
+
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/wrong-answer.jpg?raw=true)
+
+- Score/points update in real time after each question answered correctly.
+
+- Pop up appears after the game ends showing what score the player received out of 50.
+
+![Responsive Image](https://github.com/passportpowell/project-2/blob/main/assets/images/score-popup.jpg?raw=true)
+
+- Reset button underneath if the player would like to start again or player can refresh the page.
 
 ## Typography
 - Font size used was Roboto-Slab
