@@ -5,6 +5,7 @@ body {
     font-family: 'Roboto Slab', serif;
     background: url(../images/europe.webp);
     background-attachment: fixed;
+    padding-top: 50px;
 }
 
 h1,
@@ -87,7 +88,6 @@ h4 {
     width: 24%;
     font-size: large;
     background-color: #4aa6e0;
-    border-radius: 25%;
     border: 3px double #000000;
     text-align: center;
 }
@@ -98,7 +98,6 @@ a {
     color: #000000;
     width: 28%;
     background-color: #4aa6e0;
-    border-radius: 25%;
     border: 3px double #000000;
     text-align: center;
     margin: 0 auto;
@@ -141,7 +140,7 @@ a {
 @media screen and (max-width: 1006px) {
 
     .game-area {
-        width: 95%;
+        width: auto;
         margin: 0 auto;
 
     }
@@ -151,19 +150,19 @@ a {
         justify-content: space-around;
         margin: 0 auto;
         padding: 5px;
-        width: 95%;
+        width: auto;
         height: 90px;
         border: 3px double #000000;
     }
 
     #results-display {
-        width: 95%;
+        width: auto;
         padding: 5px;
         border: 3px double #000000;
     }
 
     .reset-skip-area {
-        width: 96%;
+        width: auto;
         border: 3px double #000000;
         color: aqua;
         height: 8%;
@@ -193,6 +192,20 @@ a {
     footer {
         padding-top: 5%;
     }
+}
+
+@media screen and (max-width: 486px) {
+    .reset-skip-area {
+        width: auto
+    }
+
+    .choices-area {
+        height: 37%;
+        width: auto;
+    }
+
+    #results-display {
+        width: auto;
 }
 
 @media screen and (max-width: 320px) {
