@@ -1,18 +1,17 @@
-// use arrow syntax to make functions concise. e.g. () => {}
-
+// This is to load buttons on page
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
-
 });
+
 
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("options"));
-console.log(choices);
 
 let currentScore = 0;
 let questionNo = 0;
 let noOfQuestions = [];
 
+// Questions array
 let questions = [
     {
         question: "What is the capital city of England?",
@@ -107,20 +106,20 @@ let questions = [
     },
 ];
 
-
+// Arrow syntax to make functions concise. e.g. () => {}
 startGame = () => {
     questionNo = 0;
     currentScore = 0;
     noOfQuestions = [...questions];    //  use ... (spread operator) to make a full copy of all questions
-    console.log(noOfQuestions);
     nextQuestion();
 };
 
+// Total questions top be asked and stops players from starting the game before everything loads
 const maxQuestions = 10;
-let acceptedA = false; // Stops players from starting the game before everything loads
+let acceptedA = false;
 let currentQ = {};
 
-
+// stops repeat questions, ends game upon all questions answered, allows players to ask questions
 nextQuestion = () => {
 
     if (noOfQuestions.length === 0 || questionNo > maxQuestions) {
@@ -132,20 +131,16 @@ nextQuestion = () => {
     currentQ = noOfQuestions[questionsIndex];
     question.innerText = currentQ.question;
 
-
-
     choices.forEach(choice => {
-        // const number = choice.dataset["number"];
         const number = choice.dataset.number;
         choice.innerText = currentQ["choice" + number];
     });
 
-    noOfQuestions.splice(questionsIndex, 1); //  This should remove the question from the game so it doesnt repeat
-    acceptedA = true;    // This allows players to answer the questions
-
+    noOfQuestions.splice(questionsIndex, 1);
+    acceptedA = true;
 };
 
-
+// Increments score by 5 points for each corect answer
 const total = document.getElementById("total");
 const correctIncrement = 5;
 function addScore() {
@@ -153,36 +148,27 @@ function addScore() {
     total.innerText = previousScore + correctIncrement;
 }
 
-
+// Checks if answers are correct or incorrect, applys a class which colors the answers chosen, adds a timer befor enext question
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
-        console.log(e.target); // This is to check that the button clicks matches what's excpected via console
         if (!acceptedA) return;
         acceptedA = false;
         const chosenButton = e.target;
-        // const chosenChoice = chosenButton.dataset["number"]; // to fix - something is going wrong here
         const chosenChoice = chosenButton.dataset.number;
 
         //trying some ternary
         const applyClass = chosenChoice == currentQ.answer ? "Right" : "Wrong";
 
-        console.log(applyClass); //Checking if it worked
-
         if (applyClass == "Right") {
             addScore();
         }
 
-
         chosenButton.classList.add(applyClass);
-
 
         setTimeout(() => {
             chosenButton.classList.remove(applyClass);
             nextQuestion();
         }, 1000);
-
-
-
     });
 });
 

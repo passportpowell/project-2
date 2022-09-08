@@ -89,6 +89,12 @@ FONT awesome - used for icons
 
 ## Running Tests
 
+### Playing the Game
+- Tested the game in different browsers
+- tested correct answers increase score and showed as green
+- tested incorrect answer didn't increase the score and showed as red.
+- Checked text is readable
+
 ### CSS Validation
 Validator used was https://jigsaw.w3.org/
 <p>
@@ -146,17 +152,19 @@ Deployment was achieved via GitHub and gitpod pages using the following steps
 ## Github
  - In the GitHub repository go to the Settings tab,
 
- - using the source section drop-down menu, select the Master/ or Main Branch,
+ - Using the source section drop-down menu, select the Master/ or Main Branch,
 
  - Once completed a link will be provided that may take a few minutes to go live,
 
- <!-- - live link https://passportpowell.github.io/Passport-Powell/ . -->
+- Live link https://github.com/passportpowell/project-2
 
 ## gitpod
- in the terminal type python3 -m http.server
+ - In the terminal type python3 -m http.server
  a pop up appears which upon clicking "open in browserW will show a new tab with the site created.
 
 ## Credits
 - Timeout js was sourced from "https://www.w3schools.com/jsref/met_win_setTimeout.asp" & "https://developer.mozilla.org/en-US/docs/Web/API/setTimeout"
 - Code for js was used from full stack developer course code.
-- Help was asked using the slack group as as game ended after 9 questions instead of 10. solution was found thanks to a member of the community.
+- Code for fixing the issue with the game ending after 9 questions was sourced via slack community. 
+- Code for fixing the issue with the end score giving a max of 45 points even if all questions were answered correctly was sourced via slack community. 
+- Code for incrementing by a specific number (5) rather than by 1 was sourced via slack community.

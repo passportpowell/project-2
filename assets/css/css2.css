@@ -2,10 +2,6 @@
 
 
 body {
-    padding: 0;
-    margin-top: -31px;
-    width: 85%;
-    height: 80%;
     font-family: 'Roboto Slab', serif;
     background: url(../assets/images/europe.webp);
 }
@@ -17,17 +13,16 @@ h1, h2, h3, h4, p {
 
 .game-area {
     text-align: center;
-    width: 75%;
-    margin: 0 auto;
-    padding-left: 11%;
-    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: url('../assets/images/europe.webp');
 }
 
 .game-container {
     border: 3px double #000000;
-    width: 75%;
-    margin: 0 auto;
+    width: 50%;
     background: url(../assets/images/europe.webp);
 }
 
@@ -41,7 +36,6 @@ h1, h2, h3, h4, p {
 
 footer {
     text-align: center;
-    padding-left: 15%;
 }
 
 #display {
@@ -82,7 +76,6 @@ footer {
     text-align: center;
 }
 
-
 .reset,
 a {
     width: 46%;
@@ -94,8 +87,6 @@ a {
     background-color: #c2830f;
 }
 
-/* .options:hover */
-
 .reset:hover {
     background-color: #0000ff;
 }
@@ -104,7 +95,6 @@ a {
     text-decoration: none;
     padding-top: 2%;
 }
-
 
 .reset-skip-area {
     width: 95%;
@@ -135,8 +125,7 @@ a {
     .game-area {
         width: 95%;
         margin: 0 auto;
-        padding-left: 11%;
-        padding-top: 7%;
+
     }
 
     .choices-area {
@@ -154,11 +143,6 @@ a {
         width: 95%;
         padding: 5px;
         border: 3px double #000000;
-    }
-
-    footer {
-        text-align: center;
-        padding-left: 16%;
     }
 
     .reset-skip-area {
@@ -189,9 +173,8 @@ a {
         height: 42%;
     }
 
-
     .game-container {
-        height: 594px;
+        height: 521px;
     }
 
     footer {
